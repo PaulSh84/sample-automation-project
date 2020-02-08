@@ -8,7 +8,7 @@ before_install:
   - docker pull selenium/hub:3.141.59-xenon
   - docker pull selenium/node-chrome-debug
   - docker pull selenium/node-firefox-debug
-  - docker-compose up
+  - docker-compose up -d
 
 script: mvn clean verify
 
