@@ -11,7 +11,7 @@ public class ChromeDriverManager extends DriverManager {
     @Override
     protected void createWebDriver() throws MalformedURLException {
         this.driver = new RemoteWebDriver(
-                new URL("http://127.0.0.1:4444/wd/hub"),
+                new URL("http://localhost:4444/wd/hub"),
                 getChromeOptions());
     }
 
@@ -25,7 +25,7 @@ public class ChromeDriverManager extends DriverManager {
         );
         options.setCapability("browserName", "chrome");
         options.setCapability("platform", Platform.LINUX);
-        options.setCapability("version","78.0.3904.70");
+        options.setCapability("version","79.0.3945.117");
         return options;
     }
 }
