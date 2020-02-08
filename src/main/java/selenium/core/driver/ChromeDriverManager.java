@@ -11,7 +11,7 @@ public class ChromeDriverManager extends DriverManager {
     @Override
     protected void createWebDriver() throws MalformedURLException {
         this.driver = new RemoteWebDriver(
-                new URL("http://localhost:4444/wd/hub"),
+                new URL("http://127.0.0.1:4444/wd/hub"),
                 getChromeOptions());
     }
 
