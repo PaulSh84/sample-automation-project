@@ -25,7 +25,6 @@ public class ChromeDriverManager extends DriverManager {
         );
         options.setCapability("browserName", "chrome");
         options.setCapability("platform", Platform.LINUX);
-        options.setCapability("version","79.0.3945.117");
         return options;
     }
 }
