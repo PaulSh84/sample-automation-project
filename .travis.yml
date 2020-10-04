@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker pull selenium/hub:3.141.59-xenon
+  - docker pull selenium/hub
   - docker pull selenium/node-chrome-debug
   - docker pull selenium/node-firefox-debug
   - docker-compose up -d

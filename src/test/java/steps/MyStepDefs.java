@@ -3,15 +3,13 @@ package steps;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
+import java.net.MalformedURLException;
 import org.openqa.selenium.WebDriver;
 import selenium.core.driver.BrowserType;
 import selenium.core.driver.DriverManager;
 import selenium.core.driver.DriverManagerFactory;
 
-import java.net.MalformedURLException;
-
 public class MyStepDefs {
-    DriverManagerFactory factory;
     WebDriver driver;
 
     @Before
