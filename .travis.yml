@@ -10,7 +10,19 @@ before_install:
   - docker pull selenium/node-firefox-debug
   - docker-compose up -d
 
-script: mvn clean verify
+script:
+  - mvn clean test
+  - mvn allure:report
+
+deploy:
+  provider: pages
+  skip_cleanup: false
+  local_dir: public
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target-branch: gh-pages
+  on:
+    branch: main
 
 after_script:
   - docker-compose down
