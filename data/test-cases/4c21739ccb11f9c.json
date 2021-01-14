@@ -1,12 +1,12 @@
 {
-  "uid" : "c02ae908a649a68d",
+  "uid" : "4c21739ccb11f9c",
   "name" : "Verify that test can navigate to Google page",
   "fullName" : "Go to Google.Verify that test can navigate to Google page",
   "historyId" : "b53e307d3df52735f27c6a81b5b1f1b7",
   "time" : {
-    "start" : 1610586926795,
-    "stop" : 1610586949940,
-    "duration" : 23145
+    "start" : 1610587550428,
+    "stop" : 1610587573810,
+    "duration" : 23382
   },
   "status" : "passed",
   "flaky" : false,
@@ -29,7 +29,7 @@
     "value" : "localhost"
   }, {
     "name" : "thread",
-    "value" : "4884@localhost.main(1)"
+    "value" : "4798@localhost.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -50,6 +50,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c02ae908a649a68d.json",
+  "source" : "4c21739ccb11f9c.json",
   "parameterValues" : [ ]
 }
