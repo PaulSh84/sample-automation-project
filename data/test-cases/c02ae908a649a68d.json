@@ -1,0 +1,55 @@
+{
+  "uid" : "c02ae908a649a68d",
+  "name" : "Verify that test can navigate to Google page",
+  "fullName" : "Go to Google.Verify that test can navigate to Google page",
+  "historyId" : "b53e307d3df52735f27c6a81b5b1f1b7",
+  "time" : {
+    "start" : 1610586926795,
+    "stop" : 1610586949940,
+    "duration" : 23145
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "Go to Google"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify that test can navigate to Google page"
+  }, {
+    "name" : "suite",
+    "value" : "Go to Google"
+  }, {
+    "name" : "host",
+    "value" : "localhost"
+  }, {
+    "name" : "thread",
+    "value" : "4884@localhost.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c02ae908a649a68d.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "localhost",
+    "children" : [ {
+      "name" : "4884@localhost.main(1)",
+      "children" : [ {
+        "name" : "Verify that test can navigate to Google page",
+        "uid" : "c02ae908a649a68d",
+        "parentUid" : "2c771cf0344de2460045e61fcda44467",
+        "status" : "passed",
+        "time" : {
+          "start" : 1610586926795,
+          "stop" : 1610586949940,
+          "duration" : 23145
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2c771cf0344de2460045e61fcda44467"
+    } ],
+    "uid" : "be30f600e0434356d35178c8efd2dc81"
+  } ],
+  "name" : "timeline"
+}

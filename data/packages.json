@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "",
+    "children" : [ {
+      "name" : "Verify that test can navigate to Google page",
+      "uid" : "c02ae908a649a68d",
+      "parentUid" : "be5e18e41bf32fca5cace70290d883bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610586926795,
+        "stop" : 1610586949940,
+        "duration" : 23145
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "be5e18e41bf32fca5cace70290d883bb"
+  } ],
+  "name" : "packages"
+}

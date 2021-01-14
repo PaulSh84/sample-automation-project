@@ -1,0 +1,21 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Go to Google",
+    "children" : [ {
+      "name" : "Verify that test can navigate to Google page",
+      "uid" : "c02ae908a649a68d",
+      "parentUid" : "dd3ffe00e90eaa8bcee595c6e6e0ef6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610586926795,
+        "stop" : 1610586949940,
+        "duration" : 23145
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "dd3ffe00e90eaa8bcee595c6e6e0ef6c"
+  } ],
+  "name" : "suites"
+}
