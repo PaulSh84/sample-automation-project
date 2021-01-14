@@ -22,6 +22,7 @@ deploy:
   keep-history: true
   target-branch: gh-pages
   on:
+    repo: PaulSh84/PaulSh84.github.io
     branch: main
 
 after_script:
