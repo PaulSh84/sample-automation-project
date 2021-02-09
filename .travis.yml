@@ -8,13 +8,8 @@ branches:
   only:
     - master
 
-before_install:
-  - docker pull core.selenium/hub
-  - docker pull core.selenium/node-chrome-debug
-  - docker pull core.selenium/node-firefox-debug
-  - docker-compose up -d
-
 script:
+  - mvn clean verify -Dprops.browser.and.version=firefox,73.0
   - mvn clean test
   - mvn allure:report
 
@@ -27,6 +22,3 @@ deploy:
   target-branch: gh-pages
   on:
     branch: master
-
-after_script:
-  - docker-compose down
