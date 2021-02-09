@@ -24,7 +24,7 @@ public class MyStepDefs {
 
 
   @After
-  public void tearDownChrome() {
+  public void tearDown() {
     driver.manage().deleteAllCookies();
     driver.quit();
   }

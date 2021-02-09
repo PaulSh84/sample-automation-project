@@ -9,7 +9,7 @@ branches:
     - master
 
 script:
-  - mvn clean verify -Dprops.browser.and.version=firefox,73.0
+  - mvn --log-file ./mvn.log clean verify -Dprops.browser.and.version=firefox,85.0.1
   - mvn clean test
   - mvn allure:report
 
