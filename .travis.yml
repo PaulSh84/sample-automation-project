@@ -9,7 +9,7 @@ branches:
     - master
 
 script:
-  - mvn -q clean verify -Dprops.browser.and.version=firefox,85.0.1 -Dwdm.gitHubTokenName=deployment to github pages -Dwdm.gitHubTokenSecret=$GITHUB_TOKEN
+  - mvn -q clean verify -Dprops.browser.and.version=firefox,85.0.1 -Dwdm.gitHubTokenName=deployment_to_github_pages -Dwdm.gitHubTokenSecret=$GITHUB_TOKEN
   - mvn clean test
   - mvn allure:report
 
