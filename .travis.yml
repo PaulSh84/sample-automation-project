@@ -9,9 +9,9 @@ branches:
     - master
 
 before_install:
-  - docker pull selenium/hub
-  - docker pull selenium/node-chrome-debug
-  - docker pull selenium/node-firefox-debug
+  - docker pull core.selenium/hub
+  - docker pull core.selenium/node-chrome-debug
+  - docker pull core.selenium/node-firefox-debug
   - docker-compose up -d
 
 script:
