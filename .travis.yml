@@ -7,6 +7,7 @@ services:
 
 addons:
   firefox: latest
+  chrome: stable
 
 cache:
   directories:
@@ -17,7 +18,7 @@ branches:
     - master
 
 script:
-  - mvn clean verify -Dprops.browser.and.version=firefox,85.0.1 -Dwdm.gitHubTokenName=deployment_to_github_pages -Dwdm.gitHubTokenSecret=$GITHUB_TOKEN
+  - mvn clean verify -Dprops.browser.and.version=chrome,88.0.4324.150 -Dwdm.gitHubTokenName=deployment_to_github_pages -Dwdm.gitHubTokenSecret=$GITHUB_TOKEN
   - mvn allure:report
 
 deploy:
