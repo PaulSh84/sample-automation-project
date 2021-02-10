@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 
 
 public class MyStepDefs {
-
   WebDriver driver;
 
   @Before
