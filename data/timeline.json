@@ -3,21 +3,21 @@
   "children" : [ {
     "name" : "localhost",
     "children" : [ {
-      "name" : "3806@localhost.main(1)",
+      "name" : "3695@localhost.main(1)",
       "children" : [ {
         "name" : "Verify that test can navigate to Google page",
-        "uid" : "4794619c74f44306",
-        "parentUid" : "588425d0d67be0cb2365074deed275a6",
+        "uid" : "dc298280f6f96e42",
+        "parentUid" : "c270440da9e82d48a6f58f4f84c3434b",
         "status" : "passed",
         "time" : {
-          "start" : 1612974100355,
-          "stop" : 1612974112410,
-          "duration" : 12055
+          "start" : 1612976406951,
+          "stop" : 1612976418358,
+          "duration" : 11407
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "588425d0d67be0cb2365074deed275a6"
+      "uid" : "c270440da9e82d48a6f58f4f84c3434b"
     } ],
     "uid" : "be30f600e0434356d35178c8efd2dc81"
   } ],
