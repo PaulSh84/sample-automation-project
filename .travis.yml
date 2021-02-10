@@ -1,0 +1,24 @@
+language: java
+jdk: openjdk8
+sudo: required
+services:
+  - docker
+
+branches:
+  only:
+    - master
+
+script:
+  - mvn clean verify -Dprops.browser.and.version=firefox,85.0.1 -Dwdm.gitHubTokenName=deployment_to_github_pages -Dwdm.gitHubTokenSecret=$GITHUB_TOKEN
+  - mvn clean test
+  - mvn allure:report
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: target/site/allure-maven-plugin
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target-branch: gh-pages
+  on:
+    branch: master
