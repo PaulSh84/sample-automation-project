@@ -21,9 +21,8 @@ script:
   - mvn allure:report
 
 deploy:
-  strategy: git
   provider: pages
-  cleanup: false
+  skip_cleanup: true
   local_dir: target/site/allure-maven-plugin
   github-token: $GITHUB_TOKEN
   keep_history: true
