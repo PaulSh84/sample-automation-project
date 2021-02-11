@@ -14,35 +14,36 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BrowserFactory {
 
-  private final static String BROWSER = "props.browser.and.version";
+    private final static String BROWSER = "props.browser.and.version";
 
-  @RegisterExtension
-  static SeleniumExtension seleniumJupiter = new SeleniumJupiter();
+    @RegisterExtension
+    static SeleniumExtension seleniumJupiter = new SeleniumJupiter();
 
-  public static WebDriver setUpBrowser(String browser, String version) {
-    switch (browser) {
-      case "chrome":
-        seleniumJupiter.getConfig().chromedriver().driverVersion(version).setup();
-        return new ChromeDriver(new ChromeOptions().addArguments("--start-maximized",
-            "--incognito",
-            "--disable-extensions",
-            "--disable-popup-blocking"
-        ).setHeadless(true));
-      case "firefox":
-        seleniumJupiter.getConfig().firefoxdriver().driverVersion(version).setup();
-        return new FirefoxDriver(new FirefoxOptions().setHeadless(true));
+    public static WebDriver setUpBrowser(String browser, String version) {
+        switch (browser) {
+            case "chrome":
+                seleniumJupiter.getConfig().chromedriver().driverVersion(version).setup();
+                return new ChromeDriver(new ChromeOptions().addArguments(
+                        "--start-maximized",
+                        "--incognito",
+                        "--disable-extensions",
+                        "--disable-popup-blocking"
+                ).setHeadless(true));
+            case "firefox":
+                seleniumJupiter.getConfig().firefoxdriver().driverVersion(version).setup();
+                return new FirefoxDriver(new FirefoxOptions().setHeadless(true));
 
-      default:
-        throw new RuntimeException(
-            "No such browser. Acceptable browsers are: chrome, firefox");
+            default:
+                throw new RuntimeException(
+                        "No such browser. Acceptable browsers are: chrome, firefox");
+        }
     }
-  }
 
-  public static WebDriver setUpBrowser() {
-    String[] values = readBrowserAndVersionProperty(BROWSER);
-    String browser = values[0];
-    String version = values[1];
-    return setUpBrowser(browser, version);
-  }
+    public static WebDriver setUpBrowser() {
+        String[] values = readBrowserAndVersionProperty(BROWSER);
+        String browser = values[0];
+        String version = values[1];
+        return setUpBrowser(browser, version);
+    }
 
 }
