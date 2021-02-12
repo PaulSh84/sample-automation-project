@@ -4,13 +4,13 @@
     "name" : "",
     "children" : [ {
       "name" : "Verify that test can navigate to Google page",
-      "uid" : "2651c26ae7b396fe",
+      "uid" : "cce3c4843c169d5b",
       "parentUid" : "be5e18e41bf32fca5cace70290d883bb",
       "status" : "passed",
       "time" : {
-        "start" : 1613042338021,
-        "stop" : 1613042346539,
-        "duration" : 8518
+        "start" : 1613091056481,
+        "stop" : 1613091067998,
+        "duration" : 11517
       },
       "flaky" : false,
       "parameters" : [ ]

@@ -1,10 +1,10 @@
 [ {
-  "uid" : "2651c26ae7b396fe",
+  "uid" : "cce3c4843c169d5b",
   "name" : "Verify that test can navigate to Google page",
   "time" : {
-    "start" : 1613042338021,
-    "stop" : 1613042346539,
-    "duration" : 8518
+    "start" : 1613091056481,
+    "stop" : 1613091067998,
+    "duration" : 11517
   },
   "status" : "passed",
   "severity" : "normal"
